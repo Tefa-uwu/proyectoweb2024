@@ -1,3 +1,8 @@
-let nombre=prompt("Digita tu nombre ", "");
 let contenido=document.getElementById("mensaje");
-contenido.innerHTML="Hola "+nombre;
+if(!localStorage.nom){
+    let nombre=prompt("Digita tu nombre ", "");
+    localStorage.nom=nombre;   
+    contenido.innerHTML="Hola "+nombre;
+}else{
+    contenido.innerHTML="Hola IA Hola "+localStorage.nom;
+}
