@@ -31,5 +31,11 @@ h3{
 
 .foto img{
     mix-blend-mode: normal;
+    transform: rotate(60deg);
     width: 80px;
+}
+#mensaje{
+    color: white;
+    font-size: 30px;
+    text-align: center;
 }
